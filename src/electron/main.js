@@ -25,7 +25,6 @@ app.whenReady().then(() => {
 ipcMain.on("print-pdf", (event, pdfFile) => {
     console.log("Received PDF file:", pdfFile);
   
-    // Create a hidden window to load the PDF
     let printWindow = new BrowserWindow({ show: false });
   
     printWindow.loadURL(pdfFile);
