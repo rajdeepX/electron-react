@@ -32,7 +32,6 @@ const PdfViewer = () => {
   
 
   const handlePrint = () => {
-    console.log("🖨 Printing PDF:", pdfFile);
 
     if (!pdfFile) {
       alert("No PDF file selected to print.");
